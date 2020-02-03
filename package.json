@@ -1,0 +1,42 @@
+{
+  "name": "typeorm-test",
+  "private": true,
+  "version": "1.0.0",
+  "description": "typeorm-test",
+  "scripts": {
+    "build": "tsc",
+    "check:watch": "tsc --skipLibCheck --watch",
+    "lint": "tslint -p ./tsconfig.json",
+    "start": "serverless offline start",
+    "ts-node": "ts-node -r tsconfig-paths/register --transpile-only --files",
+    "typeorm": "npm run ts-node ./node_modules/typeorm/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapphiredev/typeorm-test.git"
+  },
+  "author": "5minlab",
+  "bugs": {
+    "url": "https://github.com/sapphiredev/typeorm-test/issues"
+  },
+  "homepage": "https://github.com/sapphiredev/typeorm-test#readme",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.16",
+    "typeorm": "^0.2.22",
+    "typeorm-naming-strategies": "^1.1.0"
+  },
+  "devDependencies": {
+    "@5minlab/tsconfig": "^1.0.5",
+    "@5minlab/tslint": "^1.0.4",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

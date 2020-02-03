@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "@5minlab/tslint"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "**/*.json",
+      "src/**/migration/**/*.ts"
+    ]
+  }
+}
